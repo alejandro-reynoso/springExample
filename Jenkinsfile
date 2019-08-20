@@ -18,7 +18,7 @@ pipeline {
     }
     stage('report') {
       steps {
-        cucumber fileIncludePattern: '**/*.json', sortingMethod: 'ALPHABETICAL'
+        sh 'cucumber fileIncludePattern: '**/*.json', sortingMethod: 'ALPHABETICAL''
       }
     }
   }

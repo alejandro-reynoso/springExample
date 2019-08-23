@@ -16,6 +16,10 @@ pipeline {
         sh 'mvn package'
       }
     }
-
+    stage('') {
+      steps {
+        sleep 1
+      }
     }
+  }
 }
